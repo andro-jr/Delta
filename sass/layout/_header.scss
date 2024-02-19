@@ -1,0 +1,129 @@
+header {
+    background: white;
+    overflow: hidden;
+
+    .header-container {
+        display: flex;
+
+        .site-logo-box {
+            background: white;
+            padding: 1rem 0;
+            padding-bottom: 0.5rem;
+            position: relative;
+
+            @include flex-center;
+
+            img {
+                width: 12rem;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 99%;
+                height: 101%;
+                width: 80%;
+                clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+                background: white;
+                z-index: 2;
+            }
+        }
+
+        .site-header-items {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+
+            .site-topbar {
+                background: $color-primary-light;
+                flex: 1;
+                position: relative;
+                padding: 0.8rem 0;
+                padding-left: 10rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .topbar-contact-box {
+                    display: flex;
+                    align-items: center;
+                    gap: 4rem;
+
+                    .tobbar-contact {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        img {
+                            height: 1.4rem;
+                        }
+                    }
+
+                }
+
+                .top-bar-socials {
+                    display: flex;
+                    gap: 1.6rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $color-primary;
+                        font-size: 2rem;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: $color-primary-light;
+                    height: 100%;
+                    left: 100%;
+                    width: 100%;
+                    top: 0;
+                }
+
+            }
+
+            .site-nav-box {
+                background: $color-primary;
+                flex: 2;
+                position: relative;
+                padding: 3rem 0;
+                padding-left: 13rem;
+                display: flex;
+                justify-content: space-between;
+
+                nav {
+
+                    display: flex;
+                    gap: 4rem;
+
+                    .nav-item {
+                        color: $color-white;
+                        font-family: "Fira Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.96px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: $color-primary;
+                    height: 100%;
+                    left: 100%;
+                    width: 100%;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
