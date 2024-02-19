@@ -1,6 +1,6 @@
 "use strict";
 
-$(".owl-carousel").owlCarousel({
+$(".hero-carousel").owlCarousel({
   loop: true,
   nav: false,
   items: 1,
@@ -8,4 +8,11 @@ $(".owl-carousel").owlCarousel({
   autoplay: true,
   autoplayTimeout: 5000,
   smartSpeed: 700,
+});
+
+$(".product-carousel").owlCarousel({
+  loop: false,
+  nav: false,
+  items: 4,
+  margin: 20,
 });

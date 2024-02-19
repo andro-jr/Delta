@@ -1,0 +1,16 @@
+.product-card {
+    .product-image-box {
+        background: #F1F1F1;
+        padding: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+
+        .readmore-link {
+            font-size: 1.6rem;
+        }
+    }
+}
