@@ -8,16 +8,52 @@
     text-transform: uppercase;
     padding: 1.4rem 2.4rem;
     transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .cta-button {
     border: 2px solid $color-white;
     background: transparent;
-    text-decoration: none;
 
     &:hover {
         background: $color-white;
         color: $color-primary;
         border-color: $color-primary ;
     }
+}
+
+.hero-button {
+    background: $color-white;
+    color: $color-medium-black;
+}
+
+.button-hover {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        direction: ltr;
+        z-index: -1;
+        background: $color-primary;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        color: $color-white;
+
+        &:after {
+            right: auto;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+
 }
