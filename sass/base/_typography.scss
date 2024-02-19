@@ -105,3 +105,20 @@
     /* 155.556% */
     letter-spacing: 0.72px;
 }
+
+.primary-title {
+    color: $color-medium-black;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.secondary-p {
+    color: $color-light-black;
+    font-family: "Fira Sans";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}

@@ -52,3 +52,36 @@
         }
     }
 }
+
+#home-vision {
+    background: no-repeat center/cover url('../assets/img/vision-bg.jpg');
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+
+    .about-card {
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        height: 100%;
+
+        .about-card-image {
+            position: relative;
+
+            .about-icon-box {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: $color-primary;
+                @include flex-center;
+                padding: 1.2rem;
+
+                img {
+                    width: 4rem;
+                }
+            }
+        }
+
+        .about-text {
+            padding: 1.6rem;
+        }
+    }
+}
