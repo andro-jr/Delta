@@ -10,12 +10,98 @@
 
 .hero-heading {
     color: $color-white;
-
     font-family: "Playfair Display";
     font-size: 4.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 6.4rem;
-    /* 143.198% */
     letter-spacing: 1.383px;
+}
+
+.tertiary-title {
+    color: $color-medium-black;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.96px;
+}
+
+.heading-span {
+    color: $color-primary;
+    font-family: 'Jost';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123%;
+    margin: auto;
+
+    span {
+        position: relative;
+        margin-left: 1.6rem;
+        display: block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2.5px;
+            border-radius: 1px;
+            height: 80%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -1.6rem;
+            background: $color-primary;
+        }
+
+    }
+
+
+}
+
+.heading-span-center {
+    display: flex;
+    justify-content: center;
+}
+
+.user-name {
+    color: $color-white;
+    font-family: "Playfair Display";
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+    /* 127.273% */
+    letter-spacing: 0.88px;
+}
+
+.user-post {
+    color: $color-white;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 2.8rem;
+    letter-spacing: 0.64px;
+}
+
+.secondary-head {
+    color: $color-medium-black;
+    font-family: "Playfair Display";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.8rem;
+    letter-spacing: 1.44px;
+}
+
+.primary-p {
+    color: $color-light-black;
+    font-family: "Fira Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.8rem;
+    /* 155.556% */
+    letter-spacing: 0.72px;
 }

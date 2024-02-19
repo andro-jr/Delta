@@ -1,5 +1,9 @@
 .mb- {
 
+    &8 {
+        margin-bottom: 0.8rem;
+    }
+
     &16 {
         margin-bottom: 1.6rem;
     }
@@ -14,5 +18,9 @@
 
     &40 {
         margin-bottom: 4rem;
+    }
+
+    &64 {
+        margin-bottom: 6.4rem;
     }
 }

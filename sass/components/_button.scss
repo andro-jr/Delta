@@ -57,3 +57,32 @@
 
 
 }
+
+.readmore-link {
+    color: $color-light-black;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    text-decoration: none;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+
+    img {
+        width: 2.8rem;
+        transition: all 0.3s;
+
+    }
+
+    &:hover {
+        color: $color-primary;
+
+        img {
+            transform: scaleX(-1);
+        }
+    }
+}

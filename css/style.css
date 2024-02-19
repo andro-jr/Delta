@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @-webkit-keyframes fadeInUpSD {
   0% {
     opacity: 0;
@@ -69,8 +69,95 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: 6.4rem;
-  /* 143.198% */
   letter-spacing: 1.383px; }
+
+.tertiary-title {
+  color: #171717;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.96px; }
+
+.heading-span {
+  color: #19C1D1;
+  font-family: 'Jost';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123%;
+  margin: auto; }
+  .heading-span span {
+    position: relative;
+    margin-left: 1.6rem;
+    display: block; }
+    .heading-span span::after {
+      content: '';
+      position: absolute;
+      width: 2.5px;
+      border-radius: 1px;
+      height: 80%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -1.6rem;
+      background: #19C1D1; }
+
+.heading-span-center {
+  display: flex;
+  justify-content: center; }
+
+.user-name {
+  color: #FAFAFA;
+  font-family: "Playfair Display";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  /* 127.273% */
+  letter-spacing: 0.88px; }
+
+.user-post {
+  color: #FAFAFA;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 2.8rem;
+  letter-spacing: 0.64px; }
+
+.secondary-head {
+  color: #171717;
+  font-family: "Playfair Display";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.8rem;
+  letter-spacing: 1.44px; }
+
+.primary-p {
+  color: #262626;
+  font-family: "Fira Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.8rem;
+  /* 155.556% */
+  letter-spacing: 0.72px; }
+
+.section-space {
+  margin: 6rem 0; }
+
+.dots-svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: -3.5rem;
+  margin-bottom: -3.5rem;
+  z-index: -1; }
+
+.mb-8 {
+  margin-bottom: 0.8rem; }
 
 .mb-16 {
   margin-bottom: 1.6rem; }
@@ -83,6 +170,9 @@ p {
 
 .mb-40 {
   margin-bottom: 4rem; }
+
+.mb-64 {
+  margin-bottom: 6.4rem; }
 
 .button {
   color: #FAFAFA;
@@ -129,6 +219,26 @@ p {
       right: auto;
       left: 0;
       width: 100%; }
+
+.readmore-link {
+  color: #262626;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s; }
+  .readmore-link img {
+    width: 2.8rem;
+    transition: all 0.3s; }
+  .readmore-link:hover {
+    color: #19C1D1; }
+    .readmore-link:hover img {
+      transform: scaleX(-1); }
 
 header {
   background: white;
@@ -248,3 +358,39 @@ header {
     inset: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
     z-index: 1; }
+
+#home-about .home-about-text {
+  max-width: 60rem;
+  padding: 0 2rem;
+  margin-inline: auto; }
+
+#home-about .message-container {
+  position: relative; }
+  #home-about .message-container .message-box {
+    display: flex;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.07); }
+    #home-about .message-container .message-box .messenger-details {
+      width: 35%;
+      position: relative; }
+      #home-about .message-container .message-box .messenger-details img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      #home-about .message-container .message-box .messenger-details::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(2, 2, 2, 0.6) 0%, rgba(0, 0, 0, 0) 28.64%); }
+      #home-about .message-container .message-box .messenger-details .messenger-detail {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 2; }
+    #home-about .message-container .message-box .message-content {
+      flex: 1;
+      padding: 2rem 4rem;
+      display: flex;
+      flex-direction: column; }
+      #home-about .message-container .message-box .message-content .readmore-link {
+        margin-top: auto; }
