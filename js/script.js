@@ -16,3 +16,13 @@ $(".product-carousel").owlCarousel({
   items: 4,
   margin: 20,
 });
+
+$(".testemonial-carousel").owlCarousel({
+  loop: true,
+  nav: false,
+  items: 1,
+  margin: 20,
+  autoplay: false,
+  autoplayTimeout: 5000,
+  smartSpeed: 700,
+});

@@ -1,8 +1,26 @@
 .product-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    &:hover {
+        .product-image-box {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+
     .product-image-box {
         background: #F1F1F1;
         padding: 5rem;
         margin-bottom: 1rem;
+
+        img {
+            transition: all 0.2s;
+        }
     }
 
     .product-details {

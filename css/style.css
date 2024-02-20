@@ -86,8 +86,9 @@ p {
   font-family: 'Jost';
   font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 123%;
+  letter-spacing: 1px;
   margin: auto; }
   .heading-span span {
     position: relative;
@@ -109,7 +110,7 @@ p {
   justify-content: center; }
 
 .user-name {
-  color: #FAFAFA;
+  color: #262626;
   font-family: "Playfair Display";
   font-size: 2.2rem;
   font-style: normal;
@@ -119,7 +120,7 @@ p {
   letter-spacing: 0.88px; }
 
 .user-post {
-  color: #FAFAFA;
+  color: #262626;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 200;
@@ -190,6 +191,9 @@ p {
   margin-right: -3.5rem;
   margin-bottom: -3.5rem;
   z-index: -1; }
+
+.text-white {
+  color: #FAFAFA !important; }
 
 .mb-8 {
   margin-bottom: 0.8rem; }
@@ -275,16 +279,23 @@ p {
     .readmore-link:hover img {
       transform: scaleX(-1); }
 
-.product-card .product-image-box {
-  background: #F1F1F1;
-  padding: 5rem;
-  margin-bottom: 1rem; }
-
-.product-card .product-details {
+.product-card {
   display: flex;
-  flex-direction: column; }
-  .product-card .product-details .readmore-link {
-    font-size: 1.6rem; }
+  flex-direction: column;
+  text-decoration: none; }
+  .product-card:hover .product-image-box img {
+    transform: scale(1.1); }
+  .product-card .product-image-box {
+    background: #F1F1F1;
+    padding: 5rem;
+    margin-bottom: 1rem; }
+    .product-card .product-image-box img {
+      transition: all 0.2s; }
+  .product-card .product-details {
+    display: flex;
+    flex-direction: column; }
+    .product-card .product-details .readmore-link {
+      font-size: 1.6rem; }
 
 header {
   background: white;
@@ -464,3 +475,30 @@ header {
           width: 4rem; }
     #home-vision .about-card .about-text {
       padding: 1.6rem; }
+
+#home-testemonial {
+  background: linear-gradient(180deg, rgba(35, 35, 35, 0.7) 0%, #232323 81.77%), url("../assets/img/testemonial-bg.jpg") center center/cover no-repeat;
+  padding: 12rem 0; }
+  #home-testemonial .testemonial-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 2rem; }
+    #home-testemonial .testemonial-container .testemonial-head-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: end; }
+    #home-testemonial .testemonial-container .testemonial-item {
+      background: #FAFAFA;
+      display: flex; }
+      #home-testemonial .testemonial-container .testemonial-item .testemonial-user-image {
+        width: 35%;
+        aspect-ratio: 1;
+        object-fit: cover; }
+      #home-testemonial .testemonial-container .testemonial-item .testemonial-content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column; }
+        #home-testemonial .testemonial-container .testemonial-item .testemonial-content .quote {
+          width: 6rem; }
+        #home-testemonial .testemonial-container .testemonial-item .testemonial-content .testemonial-user {
+          margin-top: auto; }

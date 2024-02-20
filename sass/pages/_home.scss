@@ -85,3 +85,49 @@
         }
     }
 }
+
+#home-testemonial {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0.70) 0%, #232323 81.77%), url('../assets/img/testemonial-bg.jpg') center center/cover no-repeat;
+
+    padding: 12rem 0;
+
+    .testemonial-container {
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .testemonial-head-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        .testemonial-item {
+            background: $color-white;
+            display: flex;
+
+            .testemonial-user-image {
+                width: 35%;
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+
+            .testemonial-content {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                .quote {
+                    width: 6rem;
+                }
+
+
+                .testemonial-user {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+
+
+}
