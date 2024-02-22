@@ -279,6 +279,23 @@ p {
     .readmore-link:hover img {
       transform: scaleX(-1); }
 
+.secondary-button {
+  border-radius: 4px;
+  color: #19C1D1;
+  background: white;
+  padding: 1.2rem 4rem;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block; }
+  .secondary-button:hover {
+    color: #19C1D1; }
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -416,6 +433,25 @@ header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
     z-index: 1; }
 
+.brands-row .brand-carousel .owl-stage {
+  display: flex; }
+  .brands-row .brand-carousel .owl-stage .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .brands-row .brand-carousel .owl-stage .owl-item .brand-item {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .brands-row .brand-carousel .owl-stage .owl-item .brand-item img {
+        width: 12rem;
+        height: auto;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: all 0.2s; }
+        .brands-row .brand-carousel .owl-stage .owl-item .brand-item img:hover {
+          transform: scale(1.1); }
+
 #home-about .home-about-text {
   max-width: 60rem;
   padding: 0 2rem;
@@ -502,3 +538,49 @@ header {
           width: 6rem; }
         #home-testemonial .testemonial-container .testemonial-item .testemonial-content .testemonial-user {
           margin-top: auto; }
+
+#home-contact {
+  height: 90vh;
+  background: url("../../assets/img/hero-img2.jpg") center center/cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end; }
+  #home-contact .home-contact-box {
+    max-width: 55rem;
+    margin-inline: auto;
+    background: rgba(25, 193, 209, 0.8);
+    padding: 3.2rem 4.8rem;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px; }
+    #home-contact .home-contact-box .secondary-head {
+      font-weight: 600; }
+    #home-contact .home-contact-box .primary-p {
+      font-size: 14px;
+      line-height: 150%;
+      /* 21px */
+      letter-spacing: 0.42px; }
+
+#home-video {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  #home-video .curve {
+    width: 100%;
+    position: absolute;
+    top: 0; }
+    #home-video .curve.curve-inverted {
+      top: auto;
+      bottom: 0;
+      transform: rotate(180deg); }
+  #home-video .video-content {
+    width: 80%;
+    padding: 0 2rem;
+    margin: 4rem auto;
+    text-align: center; }
+    #home-video .video-content img {
+      margin: auto;
+      width: 12rem;
+      margin-bottom: 3.2rem;
+      cursor: pointer; }

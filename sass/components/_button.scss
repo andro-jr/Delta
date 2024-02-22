@@ -85,3 +85,23 @@
         }
     }
 }
+
+.secondary-button {
+    border-radius: 4px;
+    color: $color-primary;
+    background: white;
+    padding: 1.2rem 4rem;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
