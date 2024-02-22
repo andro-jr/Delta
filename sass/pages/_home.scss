@@ -177,11 +177,11 @@
     .curve {
         width: 100%;
         position: absolute;
-        top: 0;
+        top: -1px;
 
         &.curve-inverted {
             top: auto;
-            bottom: 0;
+            bottom: -1px;
             transform: rotate(180deg);
         }
     }
