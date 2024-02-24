@@ -104,6 +104,8 @@ p {
       transform: translateY(-50%);
       left: -1.6rem;
       background: #19C1D1; }
+  .heading-span.text-white span::after {
+    background: #FAFAFA; }
 
 .heading-span-center {
   display: flex;
@@ -433,6 +435,30 @@ header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
     z-index: 1; }
 
+#secondary-hero {
+  height: 40vh;
+  position: relative; }
+  #secondary-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; }
+  #secondary-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%); }
+  #secondary-hero .secondary-hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 2; }
+    #secondary-hero .secondary-hero-container .secondary-hero-content {
+      margin-top: 6.4rem; }
+      #secondary-hero .secondary-hero-container .secondary-hero-content .heading-span span::after {
+        background: #FAFAFA; }
+
 footer {
   margin-top: 14rem; }
   footer .footer-structure {
@@ -644,3 +670,57 @@ footer {
       width: 12rem;
       margin-bottom: 3.2rem;
       cursor: pointer; }
+
+.about-box {
+  display: flex;
+  gap: 2rem; }
+  .about-box .about-quote {
+    flex: 1; }
+    .about-box .about-quote h2 {
+      color: #262626;
+      font-family: "Playfair Display";
+      font-size: 4.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 123%;
+      text-transform: uppercase; }
+  .about-box .about-content {
+    flex: 1; }
+    .about-box .about-content .primary-title {
+      margin-bottom: 2.4rem; }
+
+#objectives {
+  background: #45808C;
+  margin-top: 16rem;
+  padding-bottom: 4rem; }
+  #objectives .objectives-row .objectives-img {
+    transform: translateY(-10rem);
+    height: calc(100% + 5rem); }
+    #objectives .objectives-row .objectives-img img {
+      height: 100%;
+      object-fit: cover; }
+  #objectives .objectives-row .objective-text {
+    padding: 4rem; }
+    #objectives .objectives-row .objective-text .hero-heading {
+      font-weight: 500; }
+    #objectives .objectives-row .objective-text .objectives-points {
+      list-style: none;
+      padding: 0; }
+      #objectives .objectives-row .objective-text .objectives-points li {
+        color: #FFF;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.8rem;
+        margin-bottom: 2rem;
+        position: relative;
+        padding-left: 2.4rem; }
+        #objectives .objectives-row .objective-text .objectives-points li::after {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background: url("../../assets/icons/bullet.png");
+          background-repeat: no-repeat;
+          left: 0;
+          top: 0.8rem; }

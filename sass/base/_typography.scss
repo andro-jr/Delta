@@ -58,6 +58,14 @@
 
     }
 
+    &.text-white {
+        span {
+            &::after {
+                background: $color-white;
+            }
+        }
+    }
+
 
 }
 
