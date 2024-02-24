@@ -1,0 +1,45 @@
+.contact-info-box {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    .contact-info {
+        flex-basis: 45%;
+
+        i {
+            font-size: 2rem;
+            color: $color-primary;
+        }
+
+        .info-title {
+            color: $color-medium-black;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.8rem;
+            /* 175% */
+            text-transform: uppercase;
+        }
+    }
+
+
+}
+
+.map {
+    iframe {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+.contact-form-box {
+    background: #FFF;
+    box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.12);
+    padding: 3.2rem 8rem 8rem 8rem;
+    height: 100%;
+
+    .secondary-head {
+        text-align: center;
+        color: $color-primary;
+    }
+}

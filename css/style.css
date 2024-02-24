@@ -226,7 +226,9 @@ p {
   padding: 1.4rem 2.4rem;
   transition: all 0.2s;
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  outline: none;
+  border: none; }
 
 .cta-button {
   border: 2px solid #FAFAFA;
@@ -298,6 +300,11 @@ p {
   .secondary-button:hover {
     color: #19C1D1; }
 
+.submit-button {
+  background: #19C1D1;
+  color: #FAFAFA;
+  width: 100%; }
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -315,6 +322,27 @@ p {
     flex-direction: column; }
     .product-card .product-details .readmore-link {
       font-size: 1.6rem; }
+
+.contact-form .form-row {
+  margin-bottom: 3.2rem; }
+  .contact-form .form-row .form-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #D4D4D4;
+    padding: 0.8rem 0;
+    color: #171717;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 123%;
+    letter-spacing: 0.42px; }
+    .contact-form .form-row .form-input::placeholder {
+      color: #999;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 123%;
+      letter-spacing: 0.42px; }
 
 header {
   background: white;
@@ -724,3 +752,34 @@ footer {
           background-repeat: no-repeat;
           left: 0;
           top: 0.8rem; }
+
+.contact-info-box {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap; }
+  .contact-info-box .contact-info {
+    flex-basis: 45%; }
+    .contact-info-box .contact-info i {
+      font-size: 2rem;
+      color: #19C1D1; }
+    .contact-info-box .contact-info .info-title {
+      color: #171717;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.8rem;
+      /* 175% */
+      text-transform: uppercase; }
+
+.map iframe {
+  height: 300px;
+  width: 100%; }
+
+.contact-form-box {
+  background: #FFF;
+  box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.12);
+  padding: 3.2rem 8rem 8rem 8rem;
+  height: 100%; }
+  .contact-form-box .secondary-head {
+    text-align: center;
+    color: #19C1D1; }
