@@ -53,6 +53,16 @@ img {
 p {
   margin-bottom: 0; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .bold-p {
   color: #262626;
   font-family: "Fira Sans";
@@ -84,7 +94,7 @@ p {
 .heading-span {
   color: #19C1D1;
   font-family: 'Jost';
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 123%;
@@ -305,6 +315,21 @@ p {
   color: #FAFAFA;
   width: 100%; }
 
+.primary-button {
+  color: #FAFAFA;
+  background: #19C1D1; }
+  .primary-button.button-hover {
+    border: 2px solid #19C1D1; }
+    .primary-button.button-hover:after {
+      background: #FAFAFA; }
+    .primary-button.button-hover:hover {
+      color: #19C1D1; }
+
+.button-center {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center; }
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -323,9 +348,9 @@ p {
     .product-card .product-details .readmore-link {
       font-size: 1.6rem; }
 
-.contact-form .form-row {
+.form .form-row {
   margin-bottom: 3.2rem; }
-  .contact-form .form-row .form-input {
+  .form .form-row .form-input {
     width: 100%;
     border: none;
     outline: none;
@@ -336,13 +361,46 @@ p {
     font-weight: 300;
     line-height: 123%;
     letter-spacing: 0.42px; }
-    .contact-form .form-row .form-input::placeholder {
+    .form .form-row .form-input::placeholder {
       color: #999;
       font-size: 1.4rem;
       font-style: normal;
       font-weight: 300;
       line-height: 123%;
       letter-spacing: 0.42px; }
+
+.custom-checkbox {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0.5rem; }
+  .custom-checkbox label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #737373;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 123%;
+    /* 22.14px */
+    letter-spacing: 0.54px;
+    cursor: pointer;
+    width: fit-content; }
+    .custom-checkbox label .checkbox {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 2px;
+      border: 1px solid #19C1D1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .custom-checkbox label .checkbox i {
+        color: #FAFAFA;
+        font-size: 10px; }
+  .custom-checkbox input {
+    display: none; }
+    .custom-checkbox input:checked ~ label .checkbox {
+      background: #19C1D1; }
 
 header {
   background: white;
@@ -624,7 +682,8 @@ footer {
         #home-vision .about-card .about-card-image .about-icon-box img {
           width: 4rem; }
     #home-vision .about-card .about-text {
-      padding: 1.6rem; }
+      padding: 1.6rem;
+      padding-top: 0.8rem; }
 
 #home-testemonial {
   background: linear-gradient(180deg, rgba(35, 35, 35, 0.7) 0%, #232323 81.77%), url("../assets/img/testemonial-bg.jpg") center center/cover no-repeat;
@@ -783,3 +842,45 @@ footer {
   .contact-form-box .secondary-head {
     text-align: center;
     color: #19C1D1; }
+
+#products .filter-box {
+  width: 80%; }
+  #products .filter-box .filter-row .form-row {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
+    #products .filter-box .filter-row .form-row:not(:last-child) {
+      border-bottom: 1px solid #F5F5F5; }
+  #products .filter-box .filter-row .filter-head {
+    color: #262626;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    /* 27.06px */
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+    padding-left: 3.2rem;
+    position: relative; }
+    #products .filter-box .filter-row .filter-head::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #130808;
+      width: 1.6rem;
+      height: 2px;
+      left: 0; }
+  #products .filter-box .filter-row .filter-list {
+    padding: 0; }
+
+#products .products-container .product-card {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  flex-direction: row;
+  gap: 2.4rem; }
+  #products .products-container .product-card .product-image-box {
+    width: 30%; }
+  #products .products-container .product-card .product-details {
+    flex: 1; }
+  #products .products-container .product-card:not(:last-child) {
+    border-bottom: 1px solid #F5F5F5; }

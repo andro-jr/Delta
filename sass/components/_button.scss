@@ -112,3 +112,31 @@
     color: $color-white;
     width: 100%;
 }
+
+.primary-button {
+    color: $color-white;
+    background: $color-primary;
+
+    &.button-hover {
+
+        border: 2px solid $color-primary;
+
+        &:after {
+
+            background: $color-white;
+        }
+
+        &:hover {
+            color: $color-primary;
+
+
+        }
+
+    }
+}
+
+.button-center {
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
