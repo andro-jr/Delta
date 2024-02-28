@@ -35,7 +35,7 @@
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 123%;
+    line-height: 100%;
     letter-spacing: 1px;
     margin: auto;
 
@@ -47,7 +47,7 @@
         &::after {
             content: '';
             position: absolute;
-            width: 2.5px;
+            width: 2.2px;
             border-radius: 1px;
             height: 80%;
             top: 50%;
@@ -126,7 +126,7 @@
 .secondary-p {
     color: $color-light-black;
     font-family: "Fira Sans";
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 300;
     line-height: 140%;

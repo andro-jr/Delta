@@ -97,7 +97,7 @@ input[type=number] {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 123%;
+  line-height: 100%;
   letter-spacing: 1px;
   margin: auto; }
   .heading-span span {
@@ -107,7 +107,7 @@ input[type=number] {
     .heading-span span::after {
       content: '';
       position: absolute;
-      width: 2.5px;
+      width: 2.2px;
       border-radius: 1px;
       height: 80%;
       top: 50%;
@@ -168,7 +168,7 @@ input[type=number] {
 .secondary-p {
   color: #262626;
   font-family: "Fira Sans";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 300;
   line-height: 140%; }
@@ -922,7 +922,8 @@ footer {
     width: 50%; }
 
 #product-detail .primary-title {
-  margin-bottom: 0.8rem; }
+  margin-bottom: 0.8rem;
+  font-size: 2.8rem; }
 
 #product-detail .product-category {
   font-size: 1.2rem;
