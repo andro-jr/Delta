@@ -1,5 +1,7 @@
 .section-space {
     margin: 6rem 0;
+
+
 }
 
 .dots-svg {
@@ -9,6 +11,10 @@
     margin-right: -3.5rem;
     margin-bottom: -3.5rem;
     z-index: -1;
+
+    @include respond(tab-port) {
+        margin-right: 0;
+    }
 }
 
 .text-white {

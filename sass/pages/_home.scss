@@ -14,9 +14,17 @@
             background: $color-white;
             box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.07);
 
+            @include respond(tab-port) {
+                flex-direction: column;
+            }
+
             .messenger-details {
                 width: 35%;
                 position: relative;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
 
                 img {
                     width: 100%;
@@ -44,6 +52,10 @@
                 padding: 2rem 4rem;
                 display: flex;
                 flex-direction: column;
+
+                @include respond(tab-port) {
+                    padding-inline: 2rem;
+                }
 
                 .readmore-link {
                     margin-top: auto;
@@ -107,10 +119,18 @@
             background: $color-white;
             display: flex;
 
+            @include respond(tab-port) {
+                flex-direction: column;
+            }
+
             .testemonial-user-image {
                 width: 35%;
                 aspect-ratio: 1;
                 object-fit: cover;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
             }
 
             .testemonial-content {
@@ -120,6 +140,10 @@
 
                 .quote {
                     width: 6rem;
+
+                    @include respond(tab-port) {
+                        display: none;
+                    }
                 }
 
 
@@ -175,6 +199,10 @@
     justify-content: center;
     align-items: flex-end;
 
+    @include respond(tab-port) {
+        height: 60vh;
+    }
+
     .curve {
         width: 100%;
         position: absolute;
@@ -193,6 +221,10 @@
         padding: 0 2rem;
         margin: 4rem auto;
         text-align: center;
+
+        @include respond(tab-port) {
+            width: 90%;
+        }
 
         img {
             margin: auto;

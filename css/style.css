@@ -63,6 +63,10 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield; }
 
+@media only screen and (max-width: 56.25em) {
+  .container {
+    padding-inline: 2rem; } }
+
 .bold-p {
   color: #262626;
   font-family: "Fira Sans";
@@ -80,6 +84,10 @@ input[type=number] {
   font-weight: 700;
   line-height: 6.4rem;
   letter-spacing: 1.383px; }
+  @media only screen and (max-width: 56.25em) {
+    .hero-heading {
+      font-size: 4rem;
+      line-height: 140%; } }
 
 .tertiary-title {
   color: #171717;
@@ -147,6 +155,10 @@ input[type=number] {
   font-weight: 400;
   line-height: 4.8rem;
   letter-spacing: 1.44px; }
+  @media only screen and (max-width: 56.25em) {
+    .secondary-head {
+      font-size: 3.2rem;
+      line-height: 4rem; } }
 
 .primary-p {
   color: #262626;
@@ -203,6 +215,9 @@ input[type=number] {
   margin-right: -3.5rem;
   margin-bottom: -3.5rem;
   z-index: -1; }
+  @media only screen and (max-width: 56.25em) {
+    .dots-svg {
+      margin-right: 0; } }
 
 .text-white {
   color: #FAFAFA !important; }
@@ -430,6 +445,9 @@ header {
       display: flex;
       flex-direction: column;
       flex: 1; }
+      @media only screen and (max-width: 75em) {
+        header .header-container .site-header-items {
+          display: none; } }
       header .header-container .site-header-items .site-topbar {
         background: #F1F8FE;
         flex: 1;
@@ -510,10 +528,13 @@ header {
     #hero .owl-item .hero-carousel-item .hero-container .hero-contents {
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 1rem;
       margin-bottom: 10rem;
       width: 50%;
       z-index: 2; }
+      @media only screen and (max-width: 56.25em) {
+        #hero .owl-item .hero-carousel-item .hero-container .hero-contents {
+          width: 80%; } }
   #hero .owl-item .hero-carousel-item::after {
     content: '';
     position: absolute;
@@ -663,9 +684,15 @@ footer {
     display: flex;
     background: #FAFAFA;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.07); }
+    @media only screen and (max-width: 56.25em) {
+      #home-about .message-container .message-box {
+        flex-direction: column; } }
     #home-about .message-container .message-box .messenger-details {
       width: 35%;
       position: relative; }
+      @media only screen and (max-width: 56.25em) {
+        #home-about .message-container .message-box .messenger-details {
+          width: 100%; } }
       #home-about .message-container .message-box .messenger-details img {
         width: 100%;
         height: 100%;
@@ -685,6 +712,9 @@ footer {
       padding: 2rem 4rem;
       display: flex;
       flex-direction: column; }
+      @media only screen and (max-width: 56.25em) {
+        #home-about .message-container .message-box .message-content {
+          padding-inline: 2rem; } }
       #home-about .message-container .message-box .message-content .readmore-link {
         margin-top: auto; }
 
@@ -727,16 +757,25 @@ footer {
     #home-testemonial .testemonial-container .testemonial-item {
       background: #FAFAFA;
       display: flex; }
+      @media only screen and (max-width: 56.25em) {
+        #home-testemonial .testemonial-container .testemonial-item {
+          flex-direction: column; } }
       #home-testemonial .testemonial-container .testemonial-item .testemonial-user-image {
         width: 35%;
         aspect-ratio: 1;
         object-fit: cover; }
+        @media only screen and (max-width: 56.25em) {
+          #home-testemonial .testemonial-container .testemonial-item .testemonial-user-image {
+            width: 100%; } }
       #home-testemonial .testemonial-container .testemonial-item .testemonial-content {
         padding: 2rem;
         display: flex;
         flex-direction: column; }
         #home-testemonial .testemonial-container .testemonial-item .testemonial-content .quote {
           width: 6rem; }
+          @media only screen and (max-width: 56.25em) {
+            #home-testemonial .testemonial-container .testemonial-item .testemonial-content .quote {
+              display: none; } }
         #home-testemonial .testemonial-container .testemonial-item .testemonial-content .testemonial-user {
           margin-top: auto; }
 
@@ -767,6 +806,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end; }
+  @media only screen and (max-width: 56.25em) {
+    #home-video {
+      height: 60vh; } }
   #home-video .curve {
     width: 100%;
     position: absolute;
@@ -780,6 +822,9 @@ footer {
     padding: 0 2rem;
     margin: 4rem auto;
     text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      #home-video .video-content {
+        width: 90%; } }
     #home-video .video-content img {
       margin: auto;
       width: 12rem;

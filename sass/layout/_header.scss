@@ -34,6 +34,10 @@ header {
             flex-direction: column;
             flex: 1;
 
+            @include respond(tab-land) {
+                display: none;
+            }
+
 
             .site-topbar {
                 background: $color-primary-light;

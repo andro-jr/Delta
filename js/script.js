@@ -15,6 +15,26 @@ $(".product-carousel").owlCarousel({
   nav: false,
   items: 4,
   margin: 20,
+  responsive: {
+    0: {
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      smartSpeed: 700,
+    },
+    600: {
+      items: 2,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      smartSpeed: 700,
+    },
+    900: {
+      items: 3,
+    },
+    1200: {
+      items: 4,
+    },
+  },
 });
 
 $(".testemonial-carousel").owlCarousel({
@@ -36,4 +56,12 @@ $(".brand-carousel").owlCarousel({
   slideTransition: "linear",
   autoplayTimeout: 3000,
   autoplaySpeed: 3000,
+  responsive: {
+    0: {
+      items: 3,
+    },
+    600: {
+      items: 5,
+    },
+  },
 });
