@@ -38,6 +38,10 @@
     padding: 3.2rem 8rem 8rem 8rem;
     height: 100%;
 
+    @include respond(tab-land) {
+        padding-inline: 4rem;
+    }
+
     .secondary-head {
         text-align: center;
         color: $color-primary;
