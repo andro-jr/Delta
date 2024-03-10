@@ -1,4 +1,6 @@
 .table-wrapper {
+    overflow-x: auto;
+
     .table {
         border: 1px solid $color-medium-white;
 
@@ -12,6 +14,8 @@
                 font-weight: 400;
                 line-height: 140%;
                 padding: 1rem;
+                min-width: 20rem;
+
             }
         }
 
@@ -31,6 +35,7 @@
                     line-height: 140%;
                     padding: 1rem;
                     vertical-align: middle;
+                    min-width: 20rem;
 
                     img {
                         width: 4rem;

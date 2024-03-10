@@ -164,13 +164,15 @@
     display: flex;
     align-items: flex-end;
 
+    @include respond(phone) {
+        padding-inline: 2rem;
+    }
+
     .home-contact-box {
         max-width: 55rem;
         margin-inline: auto;
 
-        @include respond(phone) {
-            margin-inline: 2rem;
-        }
+
 
         background: rgba($color-primary, 0.8);
         padding: 3.2rem 4.8rem;

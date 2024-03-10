@@ -2,6 +2,10 @@ header {
     background: white;
     overflow: hidden;
 
+    @include respond(tab-land) {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
     .header-container {
         display: flex;
 
@@ -14,6 +18,10 @@ header {
 
             img {
                 width: 12rem;
+
+                @include respond(tab-land) {
+                    width: 10rem;
+                }
             }
 
             &::after {

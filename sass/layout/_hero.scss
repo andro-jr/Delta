@@ -53,6 +53,10 @@
     height: 40vh;
     position: relative;
 
+    @include respond(tab-port) {
+        height: 30vh;
+    }
+
     img {
         width: 100%;
         height: 100%;
