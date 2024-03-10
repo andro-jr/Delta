@@ -834,6 +834,9 @@ footer {
 .about-box {
   display: flex;
   gap: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about-box {
+      flex-direction: column; } }
   .about-box .about-quote {
     flex: 1; }
     .about-box .about-quote h2 {
@@ -844,6 +847,9 @@ footer {
       font-weight: 600;
       line-height: 123%;
       text-transform: uppercase; }
+      @media only screen and (max-width: 56.25em) {
+        .about-box .about-quote h2 {
+          font-size: 3.2rem; } }
   .about-box .about-content {
     flex: 1; }
     .about-box .about-content .primary-title {
@@ -856,11 +862,22 @@ footer {
   #objectives .objectives-row .objectives-img {
     transform: translateY(-10rem);
     height: calc(100% + 5rem); }
+    @media only screen and (max-width: 56.25em) {
+      #objectives .objectives-row .objectives-img {
+        padding: 0;
+        margin-bottom: -10rem; } }
     #objectives .objectives-row .objectives-img img {
       height: 100%;
       object-fit: cover; }
+      @media only screen and (max-width: 56.25em) {
+        #objectives .objectives-row .objectives-img img {
+          aspect-ratio: 1;
+          height: auto; } }
   #objectives .objectives-row .objective-text {
     padding: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      #objectives .objectives-row .objective-text {
+        padding: 0; } }
     #objectives .objectives-row .objective-text .hero-heading {
       font-weight: 500; }
     #objectives .objectives-row .objective-text .objectives-points {

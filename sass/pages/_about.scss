@@ -2,6 +2,10 @@
     display: flex;
     gap: 2rem;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
     .about-quote {
         flex: 1;
 
@@ -13,6 +17,10 @@
             font-weight: 600;
             line-height: 123%;
             text-transform: uppercase;
+
+            @include respond(tab-port) {
+                font-size: 3.2rem;
+            }
         }
     }
 
@@ -35,14 +43,28 @@
             transform: translateY(-10rem);
             height: calc(100% + 5rem);
 
+            @include respond(tab-port) {
+                padding: 0;
+                margin-bottom: -10rem;
+            }
+
             img {
                 height: 100%;
                 object-fit: cover;
+
+                @include respond(tab-port) {
+                    aspect-ratio: 1;
+                    height: auto;
+                }
             }
         }
 
         .objective-text {
             padding: 4rem;
+
+            @include respond(tab-port) {
+                padding: 0;
+            }
 
             .hero-heading {
                 font-weight: 500;

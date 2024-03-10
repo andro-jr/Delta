@@ -21,12 +21,14 @@ $(".product-carousel").owlCarousel({
       autoplay: true,
       autoplayTimeout: 5000,
       smartSpeed: 700,
+      loop: true,
     },
     600: {
       items: 2,
       autoplay: true,
       autoplayTimeout: 5000,
       smartSpeed: 700,
+      loop: true,
     },
     900: {
       items: 3,
