@@ -45,6 +45,14 @@ footer {
                     margin-bottom: 2.4rem;
                 }
 
+                a.footer-text {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+
                 .footer-text {
                     color: #FFF;
 
@@ -58,6 +66,9 @@ footer {
 
                     text-decoration: none;
                     width: fit-content;
+
+
+
 
                 }
 

@@ -419,10 +419,8 @@ input[type=number] {
 
 header {
   background: white;
-  overflow: hidden; }
-  @media only screen and (max-width: 75em) {
-    header {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); } }
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
   header .header-container {
     display: flex; }
     header .header-container .site-logo-box {
@@ -607,6 +605,10 @@ footer {
           font-weight: 600;
           line-height: normal;
           margin-bottom: 2.4rem; }
+        footer .footer-box .footer-bottom-row .footer-col a.footer-text {
+          transition: all 0.3s; }
+          footer .footer-box .footer-bottom-row .footer-col a.footer-text:hover {
+            color: #19C1D1; }
         footer .footer-box .footer-bottom-row .footer-col .footer-text {
           color: #FFF;
           font-family: "Fira Sans";
@@ -952,8 +954,17 @@ footer {
     text-align: center;
     color: #19C1D1; }
 
+@media only screen and (max-width: 37.5em) {
+  #products .product-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
 #products .filter-box {
   width: 80%; }
+  @media only screen and (max-width: 37.5em) {
+    #products .filter-box {
+      width: 100%; } }
   #products .filter-box .filter-row .form-row {
     margin-bottom: 1rem;
     padding-bottom: 1rem; }
@@ -987,8 +998,18 @@ footer {
   padding-bottom: 1rem;
   flex-direction: row;
   gap: 2.4rem; }
+  @media only screen and (max-width: 37.5em) {
+    #products .products-container .product-card {
+      flex-direction: column; } }
   #products .products-container .product-card .product-image-box {
     width: 30%; }
+    @media only screen and (max-width: 37.5em) {
+      #products .products-container .product-card .product-image-box img {
+        width: 60%;
+        margin: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      #products .products-container .product-card .product-image-box {
+        width: 100%; } }
   #products .products-container .product-card .product-details {
     flex: 1; }
   #products .products-container .product-card:not(:last-child) {

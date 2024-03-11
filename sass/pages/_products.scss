@@ -1,8 +1,21 @@
 #products {
 
+
+    .product-col {
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     .filter-box {
 
         width: 80%;
+
+        @include respond(phone) {
+            width: 100%;
+        }
 
         .filter-row {
 
@@ -55,8 +68,24 @@
             flex-direction: row;
             gap: 2.4rem;
 
+            @include respond(phone) {
+                flex-direction: column;
+            }
+
             .product-image-box {
                 width: 30%;
+
+                img {
+
+                    @include respond(phone) {
+                        width: 60%;
+                        margin: auto;
+                    }
+                }
+
+                @include respond(phone) {
+                    width: 100%;
+                }
             }
 
             .product-details {
