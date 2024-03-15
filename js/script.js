@@ -67,3 +67,17 @@ $(".brand-carousel").owlCarousel({
     },
   },
 });
+
+$('.navigation-prev').click(function () {
+  var parentCarousel = $(this).closest('.carousel-container');
+  var owl = parentCarousel.find('.owl-carousel');
+  owl.owlCarousel();
+  owl.trigger('prev.owl.carousel');
+});
+
+$('.navigation-next').click(function () {
+  var parentCarousel = $(this).closest('.carousel-container');
+  var owl = parentCarousel.find('.owl-carousel');
+  owl.owlCarousel();
+  owl.trigger('next.owl.carousel');
+});

@@ -417,6 +417,32 @@ input[type=number] {
     .custom-checkbox input:checked ~ label .checkbox {
       background: #19C1D1; }
 
+.custom-navigation {
+  display: flex;
+  gap: 0.8rem; }
+  .custom-navigation .navigation {
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.6; }
+    .custom-navigation .navigation img {
+      width: 1.2rem;
+      filter: brightness(0) saturate(100%); }
+    .custom-navigation .navigation.navigation-primary {
+      background: #19C1D1; }
+      .custom-navigation .navigation.navigation-primary img {
+        filter: none; }
+  .custom-navigation.hero-navigation {
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+    z-index: 4; }
+
 header {
   background: white;
   overflow: hidden;
@@ -518,33 +544,34 @@ header {
           width: 100%;
           top: 0; }
 
-#hero .owl-item.active .hero-contents {
-  animation: fadeInUpSD 1s ease; }
-
-#hero .owl-item .hero-carousel-item {
-  height: 80vh;
+#hero {
   position: relative; }
-  #hero .owl-item .hero-carousel-item img {
-    object-fit: cover;
-    height: 100%; }
-  #hero .owl-item .hero-carousel-item .hero-container {
+  #hero .owl-item.active .hero-contents {
+    animation: fadeInUpSD 1s ease; }
+  #hero .owl-item .hero-carousel-item {
+    height: 80vh;
     position: relative; }
-    #hero .owl-item .hero-carousel-item .hero-container .hero-contents {
+    #hero .owl-item .hero-carousel-item img {
+      object-fit: cover;
+      height: 100%; }
+    #hero .owl-item .hero-carousel-item .hero-container {
+      position: relative; }
+      #hero .owl-item .hero-carousel-item .hero-container .hero-contents {
+        position: absolute;
+        bottom: 0;
+        left: 2rem;
+        margin-bottom: 10rem;
+        width: 50%;
+        z-index: 2; }
+        @media only screen and (max-width: 56.25em) {
+          #hero .owl-item .hero-carousel-item .hero-container .hero-contents {
+            width: 80%; } }
+    #hero .owl-item .hero-carousel-item::after {
+      content: '';
       position: absolute;
-      bottom: 0;
-      left: 1rem;
-      margin-bottom: 10rem;
-      width: 50%;
-      z-index: 2; }
-      @media only screen and (max-width: 56.25em) {
-        #hero .owl-item .hero-carousel-item .hero-container .hero-contents {
-          width: 80%; } }
-  #hero .owl-item .hero-carousel-item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-    z-index: 1; }
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+      z-index: 1; }
 
 #secondary-hero {
   height: 40vh;

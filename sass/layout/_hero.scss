@@ -1,4 +1,5 @@
 #hero {
+    position: relative;
 
     .owl-item {
         &.active {
@@ -25,7 +26,7 @@
                 .hero-contents {
                     position: absolute;
                     bottom: 0;
-                    left: 1rem;
+                    left: 2rem;
                     margin-bottom: 10rem;
                     width: 50%;
                     z-index: 2;
