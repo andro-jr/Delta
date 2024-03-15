@@ -474,10 +474,13 @@ input[type=number] {
         width: 60rem; } }
     @media only screen and (max-width: 37.5em) {
       .modal-container .modal-content {
-        width: 100%; } }
+        width: calc(100vw - 2rem); } }
     .modal-container .modal-content iframe {
       width: 100%;
       height: 100%; }
+      @media only screen and (max-width: 37.5em) {
+        .modal-container .modal-content iframe {
+          width: auto; } }
   .modal-container.hide-modal {
     display: none; }
 
