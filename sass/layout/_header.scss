@@ -139,5 +139,111 @@ header {
                 }
             }
         }
+
+        .hamburger-btn {
+            width: 3.2rem;
+            cursor: pointer;
+        }
+
+        @include respond(tab-land) {
+            justify-content: space-between;
+        }
+    }
+
+    .mobile-nav-container {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: end;
+
+        .mobile-nav-box {
+            width: 100%;
+            height: 100%;
+            background: $color-primary;
+            position: relative;
+
+
+            .mobile-menu-close {
+                width: 2rem;
+                position: absolute;
+                top: 3rem;
+                right: 2rem;
+            }
+
+            .mobile-nav-items {
+                padding: 12rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                .mobile-menus {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 3.2rem;
+
+
+                    .mobile-menu {
+                        width: fit-content;
+                        font-size: 3.2rem;
+                        text-decoration: none;
+                        color: $color-white;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        letter-spacing: 1.4px;
+                        position: relative;
+                        transition: all 0.3s cubic-bezier(.17, .67, .66, 1.4);
+
+
+
+                        &.active {
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 102%;
+                                left: 0;
+                                width: 100%;
+                                height: 4px;
+                                background: $color-white;
+                            }
+                        }
+                    }
+                }
+
+                .mobile-menu-socials {
+                    text-align: center;
+                    display: flex;
+                    gap: 2.4rem;
+                    justify-content: center;
+
+                    a {
+                        color: $color-white;
+                        font-size: 3.2rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &.hide-mobile-nav {
+            opacity: 0;
+            visibility: hidden;
+
+            .mobile-menu {
+                transform: translateX(100px);
+                opacity: 0.5;
+            }
+        }
+
+        &.show-mobile-nav {
+            .mobile-menu {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
     }
 }

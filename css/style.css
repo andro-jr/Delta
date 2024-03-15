@@ -477,7 +477,8 @@ input[type=number] {
         width: calc(100vw - 2rem); } }
     .modal-container .modal-content iframe {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      display: block; }
       @media only screen and (max-width: 37.5em) {
         .modal-container .modal-content iframe {
           width: auto; } }
@@ -584,6 +585,76 @@ header {
           left: 100%;
           width: 100%;
           top: 0; }
+    header .header-container .hamburger-btn {
+      width: 3.2rem;
+      cursor: pointer; }
+    @media only screen and (max-width: 75em) {
+      header .header-container {
+        justify-content: space-between; } }
+  header .mobile-nav-container {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: end; }
+    header .mobile-nav-container .mobile-nav-box {
+      width: 100%;
+      height: 100%;
+      background: #19C1D1;
+      position: relative; }
+      header .mobile-nav-container .mobile-nav-box .mobile-menu-close {
+        width: 2rem;
+        position: absolute;
+        top: 3rem;
+        right: 2rem; }
+      header .mobile-nav-container .mobile-nav-box .mobile-nav-items {
+        padding: 12rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; }
+        header .mobile-nav-container .mobile-nav-box .mobile-nav-items .mobile-menus {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          gap: 3.2rem; }
+          header .mobile-nav-container .mobile-nav-box .mobile-nav-items .mobile-menus .mobile-menu {
+            width: fit-content;
+            font-size: 3.2rem;
+            text-decoration: none;
+            color: #FAFAFA;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.17, 0.67, 0.66, 1.4); }
+            header .mobile-nav-container .mobile-nav-box .mobile-nav-items .mobile-menus .mobile-menu.active::after {
+              content: '';
+              position: absolute;
+              top: 102%;
+              left: 0;
+              width: 100%;
+              height: 4px;
+              background: #FAFAFA; }
+        header .mobile-nav-container .mobile-nav-box .mobile-nav-items .mobile-menu-socials {
+          text-align: center;
+          display: flex;
+          gap: 2.4rem;
+          justify-content: center; }
+          header .mobile-nav-container .mobile-nav-box .mobile-nav-items .mobile-menu-socials a {
+            color: #FAFAFA;
+            font-size: 3.2rem;
+            text-decoration: none; }
+    header .mobile-nav-container.hide-mobile-nav {
+      opacity: 0;
+      visibility: hidden; }
+      header .mobile-nav-container.hide-mobile-nav .mobile-menu {
+        transform: translateX(100px);
+        opacity: 0.5; }
+    header .mobile-nav-container.show-mobile-nav .mobile-menu {
+      transform: translateX(0);
+      opacity: 1; }
 
 #hero {
   position: relative; }

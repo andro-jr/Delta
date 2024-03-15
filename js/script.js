@@ -153,3 +153,21 @@ if (videoPlayIcon) {
   })
 }
 
+// Mobile menu action
+const hamburgerBtn = document.querySelector('.hamburger-btn');
+const mobileMenuClose = document.querySelector('.mobile-menu-close');
+const mobileMenu = document.querySelector('.hide-mobile-nav');
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hide-mobile-nav')
+    mobileMenu.classList.add('show-mobile-nav')
+  })
+}
+
+if (mobileMenuClose) {
+  mobileMenuClose.addEventListener('click', () => {
+    mobileMenu.classList.add('hide-mobile-nav');
+    mobileMenu.classList.remove('show-mobile-nav');
+  })
+}
