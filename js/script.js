@@ -21,7 +21,6 @@ $(".product-carousel").owlCarousel({
       autoplay: true,
       autoplayTimeout: 5000,
       smartSpeed: 700,
-      loop: true,
     },
     600: {
       items: 2,
@@ -37,16 +36,61 @@ $(".product-carousel").owlCarousel({
       items: 4,
     },
   },
+  onChanged: function (event) {
+    const parent = event.target.closest('.carousel-container');
+
+    if (!parent) return
+    const customNext = parent.querySelector('.navigation-next')
+    const customPrev = parent.querySelector('.navigation-prev')
+    var carousel = event.relatedTarget;
+    var hasNext = carousel.relative(carousel.current()) < carousel.maximum();
+    var hasPrev = carousel.relative(carousel.current()) > 0;
+
+    if (hasNext) {
+      customNext.classList.remove('disabled') // Enable the next button
+    } else {
+      customNext.classList.add('disabled') // Disable the next button
+    }
+
+    if (hasPrev) {
+      customPrev.classList.remove('disabled') // Enable the next button
+    } else {
+      customPrev.classList.add('disabled') // Disable the next button
+    }
+
+  }
 });
 
+
+
 $(".testemonial-carousel").owlCarousel({
-  loop: true,
   nav: false,
   items: 1,
   margin: 20,
   autoplay: false,
   autoplayTimeout: 5000,
   smartSpeed: 700,
+  onChanged: function (event) {
+    const parent = event.target.closest('.carousel-container');
+    const customNext = parent.querySelector('.navigation-next')
+    const customPrev = parent.querySelector('.navigation-prev')
+    var carousel = event.relatedTarget;
+    var hasNext = carousel.relative(carousel.current()) < carousel.maximum();
+    var hasPrev = carousel.relative(carousel.current()) > 0;
+
+    if (hasNext) {
+      customNext.classList.remove('disabled') // Enable the next button
+    } else {
+      customNext.classList.add('disabled') // Disable the next button
+    }
+
+    if (hasPrev) {
+      customPrev.classList.remove('disabled') // Enable the next button
+    } else {
+      customPrev.classList.add('disabled') // Disable the next button
+    }
+
+  }
 });
 
 $(".brand-carousel").owlCarousel({
@@ -68,16 +112,22 @@ $(".brand-carousel").owlCarousel({
   },
 });
 
-$('.navigation-prev').click(function () {
-  var parentCarousel = $(this).closest('.carousel-container');
-  var owl = parentCarousel.find('.owl-carousel');
-  owl.owlCarousel();
-  owl.trigger('prev.owl.carousel');
+
+$(document).ready(function () {
+  $('.navigation-prev').click(function () {
+    var parentCarousel = $(this).closest('.carousel-container');
+    var owl = parentCarousel.find('.owl-carousel');
+    owl.owlCarousel();
+    owl.trigger('prev.owl.carousel');
+  });
 });
 
-$('.navigation-next').click(function () {
-  var parentCarousel = $(this).closest('.carousel-container');
-  var owl = parentCarousel.find('.owl-carousel');
-  owl.owlCarousel();
-  owl.trigger('next.owl.carousel');
+$(document).ready(function () {
+  $('.navigation-next').click(function () {
+    var parentCarousel = $(this).closest('.carousel-container');
+    var owl = parentCarousel.find('.owl-carousel');
+    owl.owlCarousel();
+    owl.trigger('next.owl.carousel');
+  });
 });
+

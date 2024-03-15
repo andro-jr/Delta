@@ -20,3 +20,9 @@
 .text-white {
     color: $color-white !important;
 }
+
+.heading-with-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

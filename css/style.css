@@ -222,6 +222,11 @@ input[type=number] {
 .text-white {
   color: #FAFAFA !important; }
 
+.heading-with-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .mb-8 {
   margin-bottom: 0.8rem; }
 
@@ -421,7 +426,6 @@ input[type=number] {
   display: flex;
   gap: 0.8rem; }
   .custom-navigation .navigation {
-    background: #FAFAFA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,19 +433,26 @@ input[type=number] {
     height: 4rem;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0.6; }
+    background: #FAFAFA; }
     .custom-navigation .navigation img {
       width: 1.2rem;
       filter: brightness(0) saturate(100%); }
     .custom-navigation .navigation.navigation-primary {
       background: #19C1D1; }
-      .custom-navigation .navigation.navigation-primary img {
-        filter: none; }
+    .custom-navigation .navigation.disabled {
+      opacity: 0.5 !important; }
+  .custom-navigation.navigation-primary .navigation {
+    background: #19C1D1;
+    opacity: 1; }
+    .custom-navigation.navigation-primary .navigation img {
+      filter: none; }
   .custom-navigation.hero-navigation {
     position: absolute;
     bottom: 4rem;
     right: 2rem;
     z-index: 4; }
+    .custom-navigation.hero-navigation .navigation {
+      opacity: 0.6 !important; }
 
 header {
   background: white;
@@ -795,7 +806,7 @@ footer {
     #home-testemonial .testemonial-container .testemonial-head-box {
       display: flex;
       justify-content: space-between;
-      align-items: end; }
+      align-items: center; }
     #home-testemonial .testemonial-container .testemonial-item {
       background: #FAFAFA;
       display: flex; }
