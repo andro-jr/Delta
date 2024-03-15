@@ -625,12 +625,32 @@
       <img src="./assets/icons/curve.svg" alt="" class="curve curve-inverted" />
 
       <div class="video-content">
-        <img src="./assets/icons/play-icon.svg" alt="" />
+        <img src="./assets/icons/play-icon.svg" alt="" id="videoPlayIcon" />
 
         <h3 class="secondary-head mb-64 text-white">
           Maximize productivity with lower maintenance and operating cost with
           sustainable machinery.
         </h3>
+      </div>
+
+      <div class="modal-container hide-modal" id="video-modal">
+        <div class="modal-box">
+          <div class="modal-content">
+            <!-- &enablejsapi=1 
+            Add parameter at he end of video link to enable js and pause video when user closes modal            
+            -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/tAGnKpE4NCI?si=oc_rcIA_H005U8Kh&enablejsapi=1"
+              title="YouTube video player"
+              frameborder="0"
+              enablejsapi="1"
+              allowscriptaccess="always"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
 

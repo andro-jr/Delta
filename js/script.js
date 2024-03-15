@@ -27,7 +27,6 @@ $(".product-carousel").owlCarousel({
       autoplay: true,
       autoplayTimeout: 5000,
       smartSpeed: 700,
-      loop: true,
     },
     900: {
       items: 3,
@@ -112,7 +111,7 @@ $(".brand-carousel").owlCarousel({
   },
 });
 
-
+// Custom navigation action
 $(document).ready(function () {
   $('.navigation-prev').click(function () {
     var parentCarousel = $(this).closest('.carousel-container');
@@ -130,4 +129,27 @@ $(document).ready(function () {
     owl.trigger('next.owl.carousel');
   });
 });
+
+// Video modal
+const videoModal = document.querySelector('#video-modal');
+const videoPlayIcon = document.querySelector('#videoPlayIcon');
+
+if (videoModal) {
+  videoModal.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal-content')) return;
+
+    // Pause the video
+    const iframe = videoModal.querySelector('iframe')
+    if (iframe)
+      iframe.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+
+    videoModal.classList.add('hide-modal');
+  })
+}
+
+if (videoPlayIcon) {
+  videoPlayIcon.addEventListener('click', () => {
+    videoModal.classList.remove('hide-modal')
+  })
+}
 
