@@ -787,13 +787,13 @@ footer {
       justify-content: center;
       align-items: center; }
       .brands-row .brand-carousel .owl-stage .owl-item .brand-item img {
-        width: 12rem;
-        height: auto;
+        width: auto;
+        height: 8rem;
         filter: grayscale(100%);
         cursor: pointer;
         transition: all 0.2s; }
         .brands-row .brand-carousel .owl-stage .owl-item .brand-item img:hover {
-          transform: scale(1.1); }
+          filter: grayscale(0); }
 
 .table-wrapper {
   overflow-x: auto; }

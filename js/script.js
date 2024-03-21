@@ -71,6 +71,8 @@ $(".testemonial-carousel").owlCarousel({
   smartSpeed: 700,
   onChanged: function (event) {
     const parent = event.target.closest('.carousel-container');
+
+    if (!parent) return
     const customNext = parent.querySelector('.navigation-next')
     const customPrev = parent.querySelector('.navigation-prev')
     var carousel = event.relatedTarget;
@@ -96,7 +98,7 @@ $(".brand-carousel").owlCarousel({
   loop: true,
   nav: false,
   items: 5,
-  margin: 20,
+  margin: 40,
   autoplay: true,
   slideTransition: "linear",
   autoplayTimeout: 3000,
@@ -106,7 +108,7 @@ $(".brand-carousel").owlCarousel({
       items: 3,
     },
     600: {
-      items: 5,
+      items: 4,
     },
   },
 });

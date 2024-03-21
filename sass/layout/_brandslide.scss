@@ -10,15 +10,15 @@
                     @include flex-center;
 
                     img {
-                        width: 12rem;
-                        height: auto;
+                        width: auto;
+                        height: 8rem;
 
                         filter: grayscale(100%);
                         cursor: pointer;
                         transition: all 0.2s;
 
                         &:hover {
-                            transform: scale(1.1);
+                            filter: grayscale(0);
                         }
 
                     }
