@@ -12,7 +12,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css"
       integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -20,7 +20,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css"
       integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -50,13 +50,54 @@
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      .slider,
+      .nav {
+        width: auto;
+        margin: 30px 50px 50px;
+      }
+
+      .nav div {
+        margin: 0 3px;
+      }
+
+      .slick-slide {
+        background: red;
+        color: white;
+        padding: 40px 0;
+        font-size: 30px;
+        font-family: "Arial", "Helvetica";
+        text-align: center;
+      }
+
+      .slick-current {
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+
+      .slick-dots {
+        bottom: -30px;
+      }
+
+      .slick-slide:nth-child(odd) {
+        background: blue;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="container header-container">
         <div class="site-logo-box">
-          <img src="./assets/img/site-logo.png" alt="" />
+          <a href="index.html">
+            <img src="./assets/img/site-logo.png" alt="" />
+          </a>
         </div>
         <div class="site-header-items">
           <div class="site-topbar">
@@ -125,34 +166,9 @@
     <section class="section-space" id="product-detail">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 single-product-gallery">
-            <div class="slider-for">
-              <div class="slider-img-box">
-                <img src="./assets/img/slider1.jpg" alt="" />
-              </div>
-              <div class="slider-img-box">
-                <img src="./assets/img/slider2.png" alt="" />
-              </div>
-              <div class="slider-img-box">
-                <img src="./assets/img/slider3.jpeg" alt="" />
-              </div>
-              <div class="slider-img-box">
-                <img src="./assets/img/slider1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="slider-nav">
-              <div>
-                <img src="./assets/img/slider1.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./assets/img/slider2.png" alt="" />
-              </div>
-              <div>
-                <img src="./assets/img/slider3.jpeg" alt="" />
-              </div>
-              <div>
-                <img src="./assets/img/slider1.jpg" alt="" />
-              </div>
+          <div class="col-md-5">
+            <div class="product-image">
+              <img src="./assets/img/jaw-crusher.png" alt="" />
             </div>
           </div>
           <div class="col-md-7">
@@ -424,12 +440,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
-      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
 
     <!-- Owl carousel -->
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>

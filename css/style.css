@@ -787,8 +787,7 @@ footer {
       justify-content: center;
       align-items: center; }
       .brands-row .brand-carousel .owl-stage .owl-item .brand-item img {
-        width: auto;
-        height: 8rem;
+        width: 12rem;
         filter: grayscale(100%);
         cursor: pointer;
         transition: all 0.2s; }
